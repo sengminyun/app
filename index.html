@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel=" shortcut icon" href="img.ico">
+    <link rel="stylesheet" href="css/weather-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="weather_info">
+        <div class="bg-black"></div>
+            <section>
+                <div class="w-box">
+                    <h1 class="city"></h1>
+                    <i class="icon wi"></i>
+                    <p class="w_id"></p>
+                    <p class="temp"></p>
+                </div>
+                <aside>
+                    <div class="bt-left">
+                        <p class="today"></p>
+                    </div>
+                </aside>
+                <div class="left-box">
+                    <ul>
+                        <li>
+                            <p>습도</p>
+                            <p class="humidity"></p>
+                        </li>
+                        <li>
+                            <p>바람</p>
+                            <p class="wind"></p>
+                        </li>              
+                    </ul>
+                </div>
+                <div class="right-box">
+                    <ul>
+                        <li class="max">
+                            <p>최고온도</p>
+                            <p class="temp_max">max</p>
+                        </li>
+                        <li class="min">
+                            <p>최저온도</p>
+                            <p class="temp_min">min</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <img class="load_img" src="images/img1.jpg" width="50">
+
+    </div>
+    <script src="js/js.js"></script>
+</body>
+</html>
