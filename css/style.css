@@ -13,8 +13,6 @@ li{
 #weather_info{
     position: relative;
     width: 100%;
-    border: 1px solid #999;
-    box-sizing: border-box;
     background:linear-gradient(50deg, rgb(32, 30, 68), rgb(74, 66, 148));
     color: white;
     height: 100vh;
@@ -23,8 +21,13 @@ li{
 section{
     overflow: hidden;
     color: #fff;
-    text-shadow: 2px 2px 2px #999;
+    text-shadow: 1px 1px 1px #999;
     padding: 10px 10px;
+    margin: 0 auto;
+}
+.all{
+    width: 60%;
+    margin: 0 auto;
 }
 .w-box{
     display: flex;
@@ -81,6 +84,9 @@ section>div>figure>img{
     width: 100px;
 }
 @media(max-width:375px){
+    .all{
+        width: 100%;
+    }
     .icon{
         font-size: 70px !important;
         padding: 10% 0 ;
