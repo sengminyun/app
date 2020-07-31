@@ -1,4 +1,4 @@
-var url = 'http://api.openweathermap.org/data/2.5/weather?q=seoul&APPID=b00c1a0e56e6f9bd39917ec201e7dbfc&lang=kr'
+var url = 'http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=b00c1a0e56e6f9bd39917ec201e7dbfc';
 
 $('#weather_info .load_img').show();
 
