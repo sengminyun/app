@@ -35,7 +35,6 @@ $.getJSON(url, function(data) {
     $('.wind').html(wind + " m/s")
     $('#weather_info .load_img').hide();
     $('.clouds').html(clouds + ' %');
-    $('.wind-deg').html();
 })
 .fail(function(){
     alert("loading error");
