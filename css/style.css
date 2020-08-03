@@ -17,7 +17,6 @@ li{
     color: white;
     height: 100vh;
 }
-
 section{
     overflow: hidden;
     color: #fff;
@@ -62,7 +61,6 @@ section{
 ul{
     padding: 0;
 }
-
 section>div>figure>img{
     width: 100px;
 }
@@ -137,9 +135,6 @@ section>div>figure>img{
     .max-min>ul>li{
         padding: 5px 30px;
         font-size: 1rem;
-    }
-    .humidity-box{
-        border-right: 1px solid #fff;
     }
     .humidity-box>div{
         padding: 0 10px;
