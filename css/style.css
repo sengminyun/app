@@ -40,23 +40,27 @@ section{
 }
 .icon{
     font-size: 120px !important;
-    padding: 2% 0;
+    padding-bottom: 3%;
 }
 .w_id{
     font-size: 1.5rem;
+    padding-bottom: 3%;
 }
 .temp{
     font-size: 5rem;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
 }
 .bt-left{
     width: 100%;
-    border-bottom: 1px solid #fff;
-    box-shadow: 1px #fff;
     box-sizing: border-box;
     font-size: 2rem;
     float: left;
-    padding-bottom: 2%;
+    padding-bottom: 4%;
+}
+.today{
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
 }
 ul{
     padding: 0;
@@ -66,21 +70,16 @@ section>div>figure>img{
 }
 .max-min{
     width: 100%;
-    border-bottom: 1px solid #fff;
 }
 .max-min>ul{
-    display: flex;
-    width: 100%;
-}
-.max{
-    border-right: 1px solid #fff;
+    width: 20%;
+    margin: 0 auto;
+    font-size: 1rem;
 }
 .max-min>ul>li{
-    width: 50%;
     display: flex;
     justify-content: space-between;
-    font-size: 1.3rem;
-    padding: 5px 200px;
+    line-height: 25px;
 }
 .weather-box{
     width: 100%;
@@ -134,11 +133,7 @@ section>div>figure>img{
     }
     .city{
         font-size: 3rem !important;
-        padding-top: 10%;
-    }
-    .max-min>ul>li{
-        padding: 5px 30px;
-        font-size: 1rem;
+        padding-top: 30%;
     }
     .humidity-box>div{
         padding: 0 10px;

@@ -44,4 +44,4 @@ var month = today.getMonth() + 1;  // 월
 var date = today.getDate();  // 날짜
 var day = today.getDay();  // 요일
 
-$('.today').html(year + " / " + month + " / " + date);
+$('.today').html(year + "년 " + month + "월 " + date + "일");
