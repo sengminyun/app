@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weather</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel=" shortcut icon" href="img.ico">
+    <link rel=" shortcut icon" href="images/img.ico">
     <link rel="stylesheet" href="css/weather-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div id="weather_info">
-        <div class="bg-black"></div>
-            <section>
-                <div class="all">
+        <section>
+            <div class="all">
                 <div class="w-box">
                     <h1 class="city"></h1>
                     <i class="icon wi"></i>
@@ -25,35 +24,49 @@
                         <p class="today"></p>
                     </div>
                 </aside>
-                <div class="left-box">
-                    <ul>
-                        <li>
-                            <p>습도</p>
-                            <p class="humidity"></p>
-                        </li>
-                        <li>
-                            <p>바람</p>
-                            <p class="wind"></p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="right-box">
+                <div class="max-min">
                     <ul>
                         <li class="max">
-                            <p>최고온도</p>
+                            <p>최고 기온</p>
                             <p class="temp_max">max</p>
                         </li>
                         <li class="min">
-                            <p>최저온도</p>
+                            <p>최저 기온</p>
                             <p class="temp_min">min</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="weather-box">
+                    <ul>
+                        <li class="humidity-box">
+                            <p><img src="images/humidity icon.png" alt=""></p>
+                            <div>
+                                <p>습도</p>
+                                <p class="humidity"></p>
+                            </div>
+                        </li>
+                        <li class="wind-box">
+                            <p><img src="images/wind-icon.png" alt=""></p>
+                            <div>
+                                <p>바람</p>
+                                <p class="wind"></p>
+                            </div>
+                        </li>
+                        <li class="clouds-box">
+                            <p><img src="images/clouds-icon.png" alt=""></p>
+                            <div>
+                                <p>구름</p>
+                                <p class="clouds"></p>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
             </section>
             <img class="load_img" src="img.ico" width="50">
-
     </div>
     <script src="js/js.js"></script>
 </body>
+
 </html>

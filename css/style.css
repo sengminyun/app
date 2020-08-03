@@ -13,7 +13,7 @@ li{
 #weather_info{
     position: relative;
     width: 100%;
-    background:linear-gradient(50deg, rgb(32, 30, 68), rgb(74, 66, 148));
+    background:linear-gradient(20deg, rgb(3, 45, 149), rgb(112, 108, 153));
     color: white;
     height: 100vh;
 }
@@ -52,7 +52,7 @@ section{
 }
 .bt-left{
     width: 100%;
-    border-bottom: 2px solid #fff;
+    border-bottom: 1px solid #fff;
     box-shadow: 1px #fff;
     box-sizing: border-box;
     font-size: 2rem;
@@ -62,26 +62,53 @@ section{
 ul{
     padding: 0;
 }
-.left-box{
-    float: left;
-    width: 50%;
-    font-size: 1.2rem;
-}
-.right-box{
-    float: right;
-    width: 50%;
-    font-size: 1.2rem;
-}
-ul>li{
-    padding: 10px 5px;
-    border-bottom: 1px solid #fff;
-}
-.humidity, .wind, .temp_max, .temp_min{
-    text-align: right;
-    font-size: 1.3rem;
-}
+
 section>div>figure>img{
     width: 100px;
+}
+.max-min{
+    width: 100%;
+}
+.max-min>ul{
+    display: flex;
+    width: 100%;
+}
+.max-min>ul>li{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    padding: 5px 200px;
+}
+.weather-box{
+    width: 100%;
+    padding-top: 10%;
+}
+.weather-box>ul{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.weather-box>ul>li{
+    width: 30%;
+    font-size: 1.3rem;
+}
+.humidity-box>div{
+    padding: 0 30%;
+}
+.wind-box>div{
+    padding: 0 25%;
+}
+.clouds-box>div{
+    padding: 0 30%;
+}
+.weather-box>ul>li>p{
+    text-align: center;
+}
+.weather-box>ul>li>div{
+    display: flex;
+    justify-content: space-between;
 }
 @media(max-width:375px){
     .all{
@@ -98,7 +125,7 @@ section>div>figure>img{
         font-size: 1rem;
     }
     aside{
-        padding-top: 30%;
+        padding-top: 15%;
     }
     .w_id{
         font-size: 1rem;
@@ -106,5 +133,24 @@ section>div>figure>img{
     .city{
         font-size: 3rem !important;
         padding-top: 10%;
+    }
+    .max-min>ul>li{
+        padding: 5px 30px;
+        font-size: 1rem;
+    }
+    .humidity-box>div{
+        padding: 0 10px;
+    }
+    .wind-box>div{
+        padding: 0;
+    }
+    .clouds-box>div{
+        padding: 0 10px;
+    }
+    .weather-box>ul{
+        width: 100%;
+    }
+    .weather-box>ul>li{
+        font-size: 1rem;
     }
 }

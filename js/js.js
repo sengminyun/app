@@ -4,7 +4,9 @@ $('#weather_info .load_img').show();
 
 $.getJSON(url, function(data) {
     var sys = data.sys;                 // 국가명, 일출/일몰
-    var wind = data.wind.speed              
+    var wind = data.wind.speed;
+    var wind_deg = data.wind.deg;
+    var clouds =  data.clouds.all;          
     var city = data.name;               // 도시명
     var weather = data.weather;         // 날씨 객체
     var main = data.main;               // 온도 기압 관련 객체
@@ -19,7 +21,6 @@ $.getJSON(url, function(data) {
     var temp_max = main.temp_max;       // 최고 온도
     var nowTimestamp = Math.floor(Date.now() / 1000);
     var icon_url ='https://openweathermap.org/img/w/' + icon;
-
     var weatherClass = 'wi wi-owm-';
         weatherClass += (nowTimestamp >= data.sunrise && nowTimestamp <= data.sunset ? 'night' : 'day');
         weatherClass += ('-' + weather[0].id);
@@ -33,6 +34,8 @@ $.getJSON(url, function(data) {
     $('.humidity').html(humidity + " %");
     $('.wind').html(wind + " m/s")
     $('#weather_info .load_img').hide();
+    $('.clouds').html(clouds + ' %');
+    $('.wind-deg').html();
 })
 .fail(function(){
     alert("loading error");
@@ -43,4 +46,4 @@ var month = today.getMonth() + 1;  // 월
 var date = today.getDate();  // 날짜
 var day = today.getDay();  // 요일
 
-$('.today').html(year + "/ " + month + "/ " + date);
+$('.today').html(year + " / " + month + " / " + date);
