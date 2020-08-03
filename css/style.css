@@ -66,10 +66,14 @@ section>div>figure>img{
 }
 .max-min{
     width: 100%;
+    border-bottom: 1px solid #fff;
 }
 .max-min>ul{
     display: flex;
     width: 100%;
+}
+.max{
+    border-right: 1px solid #fff;
 }
 .max-min>ul>li{
     width: 50%;
