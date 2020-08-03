@@ -5,7 +5,6 @@ $('#weather_info .load_img').show();
 $.getJSON(url, function(data) {
     var sys = data.sys;                 // 국가명, 일출/일몰
     var wind = data.wind.speed;
-    var wind_deg = data.wind.deg;
     var clouds =  data.clouds.all;          
     var city = data.name;               // 도시명
     var weather = data.weather;         // 날씨 객체
